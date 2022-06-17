@@ -2,6 +2,11 @@ class color:
     def __init__(self):        
         self.MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
         self.MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
+        count = 0
+        for major_color in self.MAJOR_COLORS:
+            for minor_color in self.MINOR_COLORS:
+                print(self.color_pair_to_string(major_color, minor_color), ":", count)
+                count+=1
 
     def color_pair_to_string(self, major_color, minor_color):
         return f'{major_color} {minor_color}'
