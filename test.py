@@ -1,4 +1,4 @@
-from color import color
+from getcolor import color
 class test:
     def __init__(self):
         self.color = color()
